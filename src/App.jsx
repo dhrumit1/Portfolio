@@ -15,11 +15,13 @@ function App() {
   return (
     <>
       <Header />
-      <Banner />
-      <About />
-      <Skills />
-      <Projects />
-      <Footer />
+      <div className="pt-20">
+        <Banner />
+        <About />
+        <Skills />
+        <Projects />
+        <Footer />
+      </div>
     </>
   )
 }

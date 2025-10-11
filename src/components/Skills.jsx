@@ -1,21 +1,38 @@
 function Skills() {
+
+    const skills = [
+    "Asp.Net Mvc",
+    "C#",
+    "Python",
+    "PHP Laravel",
+    "Oracle SQL",
+    "HTML",
+    "CSS",
+    "JavaScript",
+  ];
+
     return (
         <>
-        <div className="main-container mt-10 mb-10">
-            <h1 className="text-3xl pb-10 font-bold text-center">Skills</h1>
-            <div className="space-y-5">
-                <div className="flex space-x-5 justify-center">
-                    <div className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full w-50 h-10 flex justify-center items-center">Asp.Net Mvc</div>
-                    <div className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full w-50 h-10 flex justify-center items-center">C#</div>
-                    <div className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full w-50 h-10 flex justify-center items-center">Python</div>
-                    <div className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full w-50 h-10 flex justify-center items-center">PHP Laravel</div>                
-                </div>
-                <div className="flex space-x-5 justify-center">
-                    <div className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full w-50 h-10 flex justify-center items-center">Oracle SQL</div>
-                    <div className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full w-50 h-10 flex justify-center items-center">HTML</div>
-                    <div className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full w-50 h-10 flex justify-center items-center">CSS</div>
-                    <div className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full w-50 h-10 flex justify-center items-center">JavaScript</div>             
-                </div>
+        <div id="skills" className="main-container mt-10 mb-10 px-6 md:px-16">
+
+            <h1 className="text-3xl md:text-4xl pb-10 font-bold text-center">
+                Skills
+            </h1>
+
+            {/* <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+                {skills.map((skill, index) => (
+                    <div key={index} className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full px-4 py-2 md:px-6 md:py-3 flex justify-center items-center text-sm md:text-base">
+                        {skill}
+                    </div>
+                ))}
+            </div> */}
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 justify-items-stretch">
+                {skills.map((skill, index) => (
+                    <div key={index} className="bg-gray-300 hover:bg-amber-400 font-semibold rounded-full px-4 py-2 md:px-6 md:py-3 flex justify-center items-center text-sm md:text-base">
+                    {skill}
+                    </div>
+                ))}
             </div>
         </div>
         </>
